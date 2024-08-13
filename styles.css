@@ -1,0 +1,165 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    height: 100%;
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #f8f8f8;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(248, 248, 248, 0.9);
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.home-link {
+    color: #4db6ac;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #4db6ac;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    box-sizing: border-box;
+}
+
+#home {
+    text-align: center;
+}
+
+.logo {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.logo span {
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: #333;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.intro-text {
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid #4db6ac;
+    color: #4db6ac;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #4db6ac;
+    color: white;
+}
+
+.website-grid, .cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.website-item, .cert-item {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 30px;
+}
+
+.education-item, .skills-list {
+    text-align: left;
+    max-width: 600px;
+    width: 100%;
+}
+
+.footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+}
+
+.social-icons-footer a {
+    color: #333;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-text {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
