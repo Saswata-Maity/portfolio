@@ -54,12 +54,17 @@ const projects = [
     {
         title: "Credit Card Fraud Analysis",
         description: "Detailed analysis of fraudulent transactions by credit card for corresponding companies using MySQL.",
-        link: "#"
+        link: "https://github.com/Saswata-Maity/fraud-transactions"
     },
     {
         title: "Heart Attack Prediction App",
         description: "Web app developed using Kaggle dataset to determine if a person has a high or low chance of heart attack.",
         link: "https://heartattackpred-webapp.onrender.com/"
+    },
+    {
+        title : "Crop Disease Prediction",
+        description: "Web app to classify plant disease type with 99.01% accuracy and 98.65% confidence. Used Separable convolutional self build architecture for identifying complex patterns.",
+        link : "https://crop-disease-prediction-1kel.onrender.com/"
     }
 ];
 
