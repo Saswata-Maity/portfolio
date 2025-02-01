@@ -74,32 +74,38 @@ const certifications = [
         title: "Google Data Analytics",
         issuer: "Coursera",
         date: "November 13, 2023",
-        link: "https://www.coursera.org/account/accomplishments/professional-cert/xxxxxxxx"
+        link: "https://coursera.org/share/2bfddd8df47a60e1fe600e07e707e2eb"
     },
     {
-        title: "Crash Course on Python",
+        title: "Google IT Crash Course on Python",
         issuer: "Coursera",
         date: "June 6, 2023",
-        link: "https://www.coursera.org/account/accomplishments/verify/xxxxxxxx"
+        link: "https://coursera.org/share/7c205309f91a772e9eb30045ebfa8197"
     },
     {
         title: "SQL Intermediate",
         issuer: "HackerRank",
         date: "September 14, 2023",
-        link: "https://www.hackerrank.com/certificates/xxxxxxxx"
+        link: "https://www.hackerrank.com/certificates/fec12e2f45e5"
+    },
+    {
+        title: "SQL TOP 50 BADGE(Leet Code)",
+        issuer: "LEETCODE",
+        date: "April 16, 2024",
+        link: "https://leetcode.com/medal/?showImg=0&id=3182394&isLevel=false"
     },
     {
         title: "Machine Learning Specialization",
         issuer: "Coursera (By Deeplearning.Ai)",
         date: "April 16, 2024",
-        link: "https://www.coursera.org/account/accomplishments/specialization/xxxxxxxx"
+        link: "https://coursera.org/share/7cbe07f39b3058ce14938bf56e53449d"
     },
-    {
-        title: "SQL TOP 50 BADGE",
-        issuer: "LEETCODE",
-        date: "April 16, 2024",
-        link: "https://www.coursera.org/account/accomplishments/specialization/xxxxxxxx"
-    }
+        {
+        title: "Deep Learning Specialization",
+        issuer: "Coursera (By Deeplearning.Ai)",
+        date: "February 1, 2025",
+        link: "https://coursera.org/share/bf183daa93e360a34bcaf1c8399586df"
+        }
 ];
 
 // Function to create project items
