@@ -4,11 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Saswata Maity Portfolio</title>
-  <!-- Link to external CSS -->
-  <link rel="stylesheet" href="styles.css">
-  <!-- Font Awesome & Leaflet CSS -->
+  <!-- External CSS references -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- Particle background container -->
@@ -21,7 +20,7 @@
         <li><a href="#intro">INTRO</a></li>
         <li><a href="#education">EDUCATION</a></li>
         <li><a href="#skills">SKILLS</a></li>
-        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#websites">WEBSITES</a></li>
         <li><a href="#certifications">CERTIFICATIONS</a></li>
         <li><a href="#contact">CONTACT</a></li>
       </ul>
@@ -29,7 +28,9 @@
   </header>
 
   <section id="home">
-    <div class="logo">SASWATA <span></span> MAITY</div>
+    <div class="logo">
+      SASWATA <span></span> MAITY
+    </div>
     <div class="social-icons">
       <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
       <a href="https://github.com/saswata-maity" target="_blank"><i class="fab fa-github"></i></a>
@@ -83,24 +84,24 @@
     </div>
   </section>
 
-  <section id="projects">
+  <section id="websites">
     <h2>Projects</h2>
     <div id="projects-grid" class="website-grid">
-      <!-- Projects will be dynamically inserted here -->
+      <!-- Projects will be inserted dynamically -->
     </div>
   </section>
 
   <section id="certifications">
     <h2>Certifications</h2>
     <div id="certifications-grid" class="cert-grid">
-      <!-- Certifications will be dynamically inserted here -->
+      <!-- Certifications will be inserted dynamically -->
     </div>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
     <p>
-      Feel free to contact me for any questions. For open source projects, please open an issue or pull request on Github. If you want to follow my work, reach me on Twitter. Otherwise, send me an email at saswatamaity01@gmail.com.
+      Feel free to contact me for any question. For open source projects, please open an issue or pull request on Github. If you want to follow my work, reach me on Twitter. Otherwise, send me an email at saswatamaity01@gmail.com.
     </p>
     <div>
       <a href="https://github.com/saswata-maity" class="btn" target="_blank">GITHUB</a>
@@ -117,12 +118,14 @@
       <a href="https://linkedin.com/in/saswata-maity" target="_blank"><i class="fab fa-linkedin"></i></a>
     </div>
     <p class="footer-text">Copyright © Saswata Maity 2024</p>
-    <p class="footer-text"><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+    <p class="footer-text">
+      <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>
+    </p>
   </footer>
 
-  <!-- Load external scripts with defer for improved performance -->
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" defer></script>
-  <script src="script.js" defer></script>
+  <!-- External JS references in order -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
