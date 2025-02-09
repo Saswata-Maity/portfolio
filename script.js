@@ -1,63 +1,30 @@
 document.addEventListener("DOMContentLoaded", function() {
-  // Initialize Particles.js with a simplified black and white configuration
+  // Initialize particles.js with your configuration
   particlesJS("particles-js", {
     particles: {
-      number: {
-        value: 80,
-        density: {
-          enable: true,
-          value_area: 800
-        }
-      },
-      color: { value: "#ffffff" },
-      shape: {
-        type: "circle",
-        stroke: { width: 0, color: "#000000" },
-        polygon: { nb_sides: 5 }
-      },
-      opacity: {
-        value: 0.5,
-        random: false,
-        anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
-      },
-      size: {
-        value: 3,
-        random: true,
-        anim: { enable: false, speed: 2, size_min: 0.1, sync: false }
-      },
+      number: { value: 80, density: { enable: true, value_area: 800 } },
+      color: { value: "#4db6ac" },
+      shape: { type: "circle" },
+      opacity: { value: 0.5, random: false },
+      size: { value: 3, random: true },
       line_linked: {
         enable: true,
         distance: 150,
-        color: "#ffffff",
+        color: "#4db6ac",
         opacity: 0.4,
         width: 1
       },
-      move: {
-        enable: true,
-        speed: 2,
-        direction: "none",
-        random: false,
-        straight: false,
-        out_mode: "out",
-        bounce: false
-      }
+      move: { enable: true, speed: 2, direction: "none", random: false, straight: false, out_mode: "out", bounce: false }
     },
     interactivity: {
       detect_on: "canvas",
-      events: {
-        onhover: { enable: true, mode: "repulse" },
-        onclick: { enable: true, mode: "push" },
-        resize: true
-      },
-      modes: {
-        repulse: { distance: 100, duration: 0.4 },
-        push: { particles_nb: 4 }
-      }
+      events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" }, resize: true },
+      modes: { repulse: { distance: 100, duration: 0.4 }, push: { particles_nb: 4 } }
     },
     retina_detect: true
   });
 
-  // Initialize Leaflet map for the contact section
+  // Initialize Leaflet map
   var map = L.map('map').setView([22.5726, 88.3639], 4);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -66,18 +33,18 @@ document.addEventListener("DOMContentLoaded", function() {
     .bindPopup('Kolkata, India')
     .openPopup();
 
-  // Enable smooth scrolling for internal navigation links
+  // Smooth scrolling for internal navigation links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
+      let target = document.querySelector(this.getAttribute('href'));
       if (target) {
         target.scrollIntoView({ behavior: 'smooth' });
       }
     });
   });
 
-  // Data for projects
+  // Data for projects (update with your actual data if needed)
   const projects = [
     {
       title: "Dynamic Flight Pricing",
@@ -96,12 +63,12 @@ document.addEventListener("DOMContentLoaded", function() {
     },
     {
       title: "Crop Disease Prediction",
-      description: "Web app to classify plant disease type with 99.01% accuracy and 98.65% confidence using a custom CNN architecture.",
+      description: "Web app to classify plant disease type with 99.01% accuracy and 98.65% confidence. Used a separable convolutional self-built architecture for identifying complex patterns.",
       link: "https://crop-disease-prediction-1kel.onrender.com/"
     }
   ];
 
-  // Data for certifications
+  // Data for certifications (update with your actual data if needed)
   const certifications = [
     {
       title: "Google Data Analytics",
@@ -122,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function() {
       link: "https://www.hackerrank.com/certificates/fec12e2f45e5"
     },
     {
-      title: "SQL TOP 50 BADGE (LeetCode)",
+      title: "SQL TOP 50 BADGE (Leet Code)",
       issuer: "LEETCODE",
       date: "April 16, 2024",
       link: "https://leetcode.com/medal/?showImg=0&id=3182394&isLevel=false"
@@ -141,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   ];
 
-  // Functions to create HTML for project and certification items
+  // Functions to create HTML items
   function createProjectItem(project) {
     return `
       <div class="website-item">
@@ -162,7 +129,13 @@ document.addEventListener("DOMContentLoaded", function() {
     `;
   }
 
-  // Dynamically populate the projects and certifications sections
-  document.getElementById('projects-grid').innerHTML = projects.map(createProjectItem).join('');
-  document.getElementById('certifications-grid').innerHTML = certifications.map(createCertificationItem).join('');
+  // Populate the projects and certifications sections
+  const projectsGrid = document.getElementById('projects-grid');
+  if (projectsGrid) {
+    projectsGrid.innerHTML = projects.map(createProjectItem).join('');
+  }
+  const certificationsGrid = document.getElementById('certifications-grid');
+  if (certificationsGrid) {
+    certificationsGrid.innerHTML = certifications.map(createCertificationItem).join('');
+  }
 });
