@@ -105,6 +105,12 @@ document.addEventListener("DOMContentLoaded", function() {
       issuer: "Coursera (By Deeplearning.Ai)",
       date: "February 1, 2025",
       link: "https://coursera.org/share/bf183daa93e360a34bcaf1c8399586df"
+    },
+    {
+      title: "Tensorflow Developer",
+      issuer: "Coursera (By Deeplearning.Ai)",
+      date: "March 10, 2025",
+      link: "https://coursera.org/share/b67546723ee35958347a919f7dd768ec"
     }
   ];
 
